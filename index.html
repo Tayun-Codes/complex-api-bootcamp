@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>So you want to know your 3 most played League of Legends champions?</h1>
+		<span>Put in your username and tagline:</span>
+		<input id="gameName" type="text" placeholder="username">
+		<input id="tagLine" type="text" placeholder="#xxxxx">
+		<button>Top Three of Shame</button>
+		<p id="error"></p>
+		<p id="loading" class="hidden"></p>
+		<section id="partTwo" class="hidden">
+			<select name="location" id="location">
+				<option value="">--Please choose an location--</option>
+				<option id="test" value="americas">Americas</option>
+				<option value="asia">Asia</option>
+				<option value="esports">Esports</option>
+				<option value="europe">Europe</option>
+			</select>
+		</section>
+		<section id="partThree" class="hidden">
+			<select name="region" id="region">
+				<option value="">--Please choose a region--</option>
+				<option value="BR1">BR1</option>
+				<option value="EUN1">EUN1</option>
+				<option value="EUW1">EUW1</option>
+				<option value="JP1">JP1</option>
+				<option value="KR">KR</option>
+				<option value="LA1">LA1</option>
+				<option value="LA2">LA2</option>
+				<option value="ME1">ME1</option>
+				<option value="NA1">NA1</option>
+				<option value="OC1">OC1</option>
+				<option value="PH2">PH2</option>
+				<option value="RU">RU</option>
+				<option value="SG2">SG2</option>
+				<option value="TH2">TH2</option>
+				<option value="TR1">TR1</option>
+				<option value="TW2">TW2</option>
+				<option value="VN2">VN2</option>
+			</select>
+		</section>
+		<h2 class="hidden">Now choose a champion to get a playlist to int to.</h2>
+		<section id="0" class="champion">
+			<h3 id="championOneName"></h3>
+			<img id="championOneImg" src="">
+		</section>
+		<section id="1" class="champion">
+			<h3 id="championTwoName"></h3>
+			<img id="championTwoImg" src="">
+		</section>
+		<section id="2" class="champion">
+			<h3 id="championThreeName"></h3>
+			<img id="championThreeImg" src="">
+		</section>
+		<section class="playlist hidden">
+			<a href="" target="_blank">
+				<h3 id="playlistName"></h3>
+				<img id="playlistImage" src="">
+				<h4> Powered by Spotify </h4>
+			</a>
+		</section>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

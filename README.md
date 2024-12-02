@@ -1,22 +1,24 @@
 # 📊 Project: Complex API 
+Goal: Use data returned from one api to make a request to another api and display the data returned
 
-### Goal: Use data returned from one api to make a request to another api and display the data returned
 
-### How to submit your code for review:
+https://github.com/user-attachments/assets/18f4c064-4c5a-4183-a8cd-2937a540c969
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
+Accessed the Riot API to retrieve top three, most-played champions based on username and region.
+Due to the Riot Games not maintaining the API, access to a community API was required in order to display champion images on the document.
+The three champion names are then fed into the Spotify API to retrieve the top playlist with that name in the title.
+
+Unfortunately, Riot API Keys are only valid for 24 hours so this application would require a lot of maintenance to host.
+
+**Instructions for if you would like to download the code and input your own keys:**
+- Create a keys.js document in the js folder
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+export const riotKey = 'your riotKey within quotations'
+export const spotifyClientID = 'your spotifyClientID within quotations'
+export const spotifyClientSecret = 'your spotifyClientSecret within quotations'
 ```
+
+## What I Learned
+- How to read API documentation and access the data that I need
+- How to directly feed data from one API into another API for linked fetches
